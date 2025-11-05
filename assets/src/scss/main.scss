@@ -1,0 +1,38 @@
+@import 'variables'; // Change these defaults to match your page style
+@import 'vendor/bootstrap/bootstrap';
+
+.bg-light {
+    background: #f1faff !important;
+}
+.bg-primary {
+    background: $primary;
+}
+.bg-dark {
+    background: $header-colour !important;
+}
+.color-brand {
+    color: $primary;
+}
+.text-light,
+.text-light * {
+    color: #ffffff;
+}
+.text-underline {
+    text-decoration: underline;
+}
+
+// Comment these out if you're not using the following elements. All are enabled by default...
+
+
+// Default Styles
+@import 'typography';
+@import 'global';
+@import 'header';
+@import 'button';
+@import 'section';
+@import 'form';
+
+
+/* purgecss start ignore */
+@import 'vendor/slick'; // Default slick styles 
+/* purgecss end ignore */

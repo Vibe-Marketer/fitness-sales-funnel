@@ -1,0 +1,36 @@
+header {
+    position: relative;
+    padding: 15px;
+    z-index: 999 !important;
+    transition: .5s;
+    &.scrolled {
+        background: $header-colour;
+    }
+}
+
+.header-logo img {
+    width: 200px;
+    transition: .4s ease-in-out;
+    @include media-breakpoint-up(md) {
+        width: 250px;
+        .scrolled & {
+            width: 200px;
+        }
+    }
+}
+
+.header-phone {
+    text-decoration: none;
+    i {
+        font-family: "Font Awesome 5 Free";
+        font-size: 1.2rem;
+        font-style: normal;
+        color: $primary;
+    }
+    .phone-text {
+        font-size: 1.3rem;
+        font-weight: bold;
+        line-height: 1.5;
+        color: white;
+    }
+}
